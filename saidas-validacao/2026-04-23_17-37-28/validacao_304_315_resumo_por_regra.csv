@@ -1,0 +1,40 @@
+cenario,mercado,margem_contribuicao,conta_esperada,centro_esperado,conta_atual,centro_atual,status,quantidade_linhas,soma_valor_orcado
+Realista,Mercado Externo,Quantidade,,,,,SEM_REGRA_NA_304,1200,2229442.6899999995
+Realista,Mercado Interno,Quantidade,,,,,SEM_REGRA_NA_304,3600,6621866.389999994
+Realista,Mercado Externo,Faturamento Bruto,31201 - Venda de Produtos Região A,21001 - Vendas,31201 - Venda de Produtos Região A,21001 - Vendas,OK,260,1620032.2827348923
+Realista,Mercado Interno,Faturamento Bruto,31001 - Venda de Produtos,21001 - Vendas,31001 - Venda de Produtos,21001 - Vendas,OK,3600,22960241.503028102
+Realista,Mercado Interno,IPI,31199 - ( - ) IPI Faturado,21001 - Vendas,31199 - ( - ) IPI Faturado,21001 - Vendas,OK,3600,-734456.291143844
+Realista,Mercado Externo,IPI,31199 - ( - ) IPI Faturado,21001 - Vendas,31199 - ( - ) IPI Faturado,21001 - Vendas,OK,260,-52153.896992229405
+Realista,Mercado Interno,ICMS,31801 - (-) ICMS,21001 - Vendas,31801 - (-) ICMS,21001 - Vendas,OK,3600,-5224798.0722948285
+Realista,Mercado Externo,ICMS,31801 - (-) ICMS,21001 - Vendas,31801 - (-) ICMS,21001 - Vendas,OK,260,-439005.94800794584
+Realista,Mercado Externo,PIS,31802 - (-) PIS,21001 - Vendas,31802 - (-) PIS,21001 - Vendas,OK,260,-25869.993364753922
+Realista,Mercado Interno,PIS,31802 - (-) PIS,21001 - Vendas,31802 - (-) PIS,21001 - Vendas,OK,3600,-366725.45599609206
+Realista,Mercado Interno,COFINS,31803 - (-) COFINS,21001 - Vendas,31803 - (-) COFINS,21001 - Vendas,OK,3600,-1689159.6761032112
+Realista,Mercado Externo,COFINS,31803 - (-) COFINS,21001 - Vendas,31803 - (-) COFINS,21001 - Vendas,OK,260,-119158.75731644237
+Realista,Mercado Externo,ISS,31805 - (-) ISS,21001 - Vendas,31805 - (-) ISS,21001 - Vendas,OK,260,-47036.35157227989
+Realista,Mercado Interno,ISS,31805 - (-) ISS,21001 - Vendas,31805 - (-) ISS,21001 - Vendas,OK,3360,-475627.3372054899
+Realista,Mercado Interno,Faturamento Bruto - IPI e ICMS-ST,,,,,SEM_REGRA_NA_304,3600,22225785.21188446
+Realista,Mercado Externo,Faturamento Bruto - IPI e ICMS-ST,,,,,SEM_REGRA_NA_304,260,1567878.3857426627
+Realista,Mercado Interno,Faturamento Líquido,,,,,SEM_REGRA_NA_304,3600,14276620.487025764
+Realista,Mercado Externo,Faturamento Líquido,,,,,SEM_REGRA_NA_304,260,936807.3354812404
+Realista,Mercado Interno,Comissões,44101 - Comissoes a Representantes,21001 - Vendas,44101 - Comissoes a Representantes,21001 - Vendas,OK,3600,-214149.30730538667
+Realista,Mercado Externo,Comissões,44201 - Comissoes Pagas no Exterior,21001 - Vendas,44201 - Comissoes Pagas no Exterior,21001 - Vendas,OK,260,-14052.110032218614
+Realista,Mercado Interno,Margem de Contribuição Bruta,,,,,SEM_REGRA_NA_304,3600,13258862.727114374
+Realista,Mercado Externo,Margem de Contribuição Bruta,,,,,SEM_REGRA_NA_304,260,866054.0955533012
+Realista,Mercado Interno,CPV - Matéria Prima,,,41901 - Produtos Acabados,21001 - Vendas,SEM_REGRA_NA_304,3600,-214149.3073053868
+Realista,Mercado Externo,CPV - Matéria Prima,,,41901 - Produtos Acabados,21001 - Vendas,SEM_REGRA_NA_304,260,-14052.110032218614
+Realista,Mercado Interno,Margem de Contribuição Líquida,,,,,SEM_REGRA_NA_304,3600,13044713.419809014
+Realista,Mercado Externo,Margem de Contribuição Líquida,,,,,SEM_REGRA_NA_304,260,852001.9855210824
+Realista,Mercado Interno,Bonificações,44107 - Bonificacoes,21001 - Vendas,44107 - Bonificacoes,21001 - Vendas,OK,3600,-229602.41503028225
+Realista,Mercado Externo,Bonificações,44207 - Bonificacoes,21001 - Vendas,44207 - Bonificacoes,21001 - Vendas,OK,260,-16200.322827348926
+Realista,Mercado Externo,Amostras,44208 - Amostras a Clientes,21001 - Vendas,44208 - Amostras a Clientes,21001 - Vendas,OK,260,-8100.161413674461
+Realista,Mercado Interno,Amostras,44108 - Amostras a Clientes,21001 - Vendas,44108 - Amostras a Clientes,21001 - Vendas,OK,3600,-114801.20751514104
+Realista,Mercado Interno,Garantia,45106 - Descontos Concedidos,21001 - Vendas,45106 - Descontos Concedidos,21001 - Vendas,OK,3600,-229602.41503028208
+Realista,Mercado Externo,Garantia,45106 - Descontos Concedidos,21001 - Vendas,45106 - Descontos Concedidos,21001 - Vendas,OK,260,-16200.322827348926
+Realista,Mercado Interno,Publicidade,45106 - Descontos Concedidos,21001 - Vendas,45106 - Descontos Concedidos,21001 - Vendas,OK,3600,-57400.60375757056
+Realista,Mercado Externo,Publicidade,45106 - Descontos Concedidos,21001 - Vendas,45106 - Descontos Concedidos,21001 - Vendas,OK,260,-4050.0807068372333
+Realista,Mercado Interno,Descontos Concedidos,45106 - Descontos Concedidos,21001 - Vendas,45106 - Descontos Concedidos,21001 - Vendas,OK,3600,-114801.20751514113
+Realista,Mercado Externo,Descontos Concedidos,45106 - Descontos Concedidos,21001 - Vendas,45106 - Descontos Concedidos,21001 - Vendas,OK,260,-8100.161413674464
+Realista,Mercado Externo,Outras DVVs,44206 - Seguros Transp. Mercadorias,21001 - Vendas,44206 - Seguros Transp. Mercadorias,21001 - Vendas,OK,260,-4050.0807068372314
+Realista,Mercado Interno,Outras DVVs,44106 - Seguros Transp. Mercadorias,21001 - Vendas,44106 - Seguros Transp. Mercadorias,21001 - Vendas,OK,3600,-57400.60375757051
+Realista,Mercado Interno,Outros Impostos,31804 - (-) Contrib. Previd. S/ Receita Bruta.,21001 - Vendas,31804 - (-) Contrib. Previd. S/ Receita Bruta.,21001 - Vendas,OK,3120,-192854.18325899972

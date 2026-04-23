@@ -1,0 +1,33 @@
+﻿DESC_CENARIO,DESC_MERCADO,DESC_MARGEM DE CONTRIBUIÇÃO,Conta Contábil,Centro de Custo
+Realista,Mercado Interno,Faturamento Bruto,31004 - Venda de Produtos - ZFM,21001 - Vendas
+Realista,Mercado Externo,Faturamento Bruto,31201 - Venda de Produtos Região A,21001 - Vendas
+Realista,Mercado Interno,IPI,31199 - ( - ) IPI Faturado,21001 - Vendas
+Realista,Mercado Externo,IPI,31199 - ( - ) IPI Faturado,21001 - Vendas
+Realista,Mercado Interno,ICMS-ST,31199 - ( - ) IPI Faturado,21001 - Vendas
+Realista,Mercado Externo,ICMS-ST,31199 - ( - ) IPI Faturado,21001 - Vendas
+Realista,Mercado Interno,ICMS,31801 - (-) ICMS,21001 - Vendas
+Realista,Mercado Externo,ICMS,31801 - (-) ICMS,21001 - Vendas
+Realista,Mercado Interno,PIS,31802 - (-) PIS,21001 - Vendas
+Realista,Mercado Externo,PIS,31802 - (-) PIS,21001 - Vendas
+Realista,Mercado Interno,COFINS,31803 - (-) COFINS,21001 - Vendas
+Realista,Mercado Externo,COFINS,31803 - (-) COFINS,21001 - Vendas
+Realista,Mercado Interno,ISS,31805 - (-) ISS,21001 - Vendas
+Realista,Mercado Externo,ISS,31805 - (-) ISS,21001 - Vendas
+Realista,Mercado Interno,Comissões,44101 - Comissoes a Representantes,21001 - Vendas
+Realista,Mercado Externo,Comissões,44201 - Comissoes Pagas no Exterior,21001 - Vendas
+Realista,Mercado Interno,Fretes,44104 - Fretes e Carretos s/ Vendas,21001 - Vendas
+Realista,Mercado Externo,Fretes,44204 - Fretes Internacionais,21001 - Vendas
+Realista,Mercado Interno,Bonificações,44107 - Bonificacoes,21001 - Vendas
+Realista,Mercado Externo,Bonificações,44207 - Bonificacoes,21001 - Vendas
+Realista,Mercado Interno,Amostras,44108 - Amostras a Clientes,21001 - Vendas
+Realista,Mercado Externo,Amostras,44208 - Amostras a Clientes,21001 - Vendas
+Realista,Mercado Interno,Garantia,45106 - Descontos Concedidos,21001 - Vendas
+Realista,Mercado Externo,Garantia,45106 - Descontos Concedidos,21001 - Vendas
+Realista,Mercado Interno,Publicidade,45106 - Descontos Concedidos,21001 - Vendas
+Realista,Mercado Externo,Publicidade,45106 - Descontos Concedidos,21001 - Vendas
+Realista,Mercado Interno,Descontos Concedidos,45106 - Descontos Concedidos,21001 - Vendas
+Realista,Mercado Externo,Descontos Concedidos,45106 - Descontos Concedidos,21001 - Vendas
+Realista,Mercado Interno,Outras DVVs,44106 - Seguros Transp. Mercadorias,21001 - Vendas
+Realista,Mercado Externo,Outras DVVs,44206 - Seguros Transp. Mercadorias,21001 - Vendas
+Realista,Mercado Interno,Outros Impostos,31804 - (-) Contrib. Previd. S/ Receita Bruta.,21001 - Vendas
+Realista,Mercado Externo,Outros Impostos,31804 - (-) Contrib. Previd. S/ Receita Bruta.,21001 - Vendas

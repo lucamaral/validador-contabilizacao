@@ -1,0 +1,13 @@
+{
+  "arquivos_entrada": {
+    "view304": "C:\\handit\\workspace\\treinamento-serviços\\integracao_handit\\downloads\\vision_304_23_04_2026 - 17_04_46.xlsx",
+    "view315": "C:\\handit\\workspace\\treinamento-serviços\\integracao_handit\\downloads\\vision_315_23_04_2026 - 16_47_42.xlsx"
+  },
+  "totais": {
+    "linhas_304": 32,
+    "linhas_315": 77160,
+    "SEM_REGRA_NA_304": 24100,
+    "OK": 49460,
+    "CONTA_DIVERGENTE": 3600
+  }
+}

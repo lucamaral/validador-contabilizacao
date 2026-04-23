@@ -40,25 +40,27 @@ Com esse projeto, tudo isso é feito em segundos — e com um relatório pronto 
 
 ## Como funciona na prática
 
-```
-Parametrização (304)
-        │
-        │  "Para Mercado Interno + Faturamento Bruto
-        │   use a Conta 31004 e o CC 21001"
-        │
-        ▼
-Orçamento (315)
-        │
-        │  Cada linha do orçamento deve seguir
-        │  a regra acima
-        │
-        ▼
-Validador
-        │
-        ├── ✅ OK — regra aplicada corretamente
-        ├── ⚠️  Conta divergente — conta contábil diferente da parametrizada
-        ├── ⚠️  Centro divergente — centro de custo diferente do parametrizado
-        └── ❌ Sem regra — linha sem parametrização correspondente
+```mermaid
+flowchart TD
+    A["🏢 Handit"]
+
+    A -->|coleta automática| B["📋 Visão 304\nParametrização\nReceitas — Contabilização do Resultado"]
+    A -->|coleta automática| C["📊 Visão 315\nOrçamento\nReceitas — Cálculo de Margem"]
+
+    B --> D["🔍 Validador\nCruza as regras da 304\ncontra cada linha da 315"]
+    C --> D
+
+    D --> E{"Resultado por linha"}
+
+    E --> F["✅ OK\nRegra aplicada corretamente"]
+    E --> G["⚠️ Conta divergente\nConta contábil diferente\nda parametrizada"]
+    E --> H["⚠️ Centro divergente\nCentro de custo diferente\ndo parametrizado"]
+    E --> I["❌ Sem regra\nLinha sem parametrização\ncorrespondente na 304"]
+
+    F --> J["📁 Relatório\nsaidas-validacao/\ndata-hora/"]
+    G --> J
+    H --> J
+    I --> J
 ```
 
 ---

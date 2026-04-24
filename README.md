@@ -1,44 +1,47 @@
 # Validador de Contabilização
 
-> Automação inteligente para garantir que os valores orçados estejam sendo contabilizados corretamente no Handit.
+> Automatiza a verificação de que os valores orçados no Handit estão sendo contabilizados nas contas e centros de custo corretos.
 
 ---
 
-## O que esse projeto faz
+## O problema
 
-Empresas que utilizam o **Handit** para gestão orçamentária precisam garantir que os valores lançados no orçamento sigam as regras de contabilização definidas pela equipe de controladoria.
+Toda empresa que usa o Handit para orçamento precisa garantir que cada valor lançado siga as **regras de contabilização** definidas pela controladoria — ou seja, que o valor vá para a conta contábil e o centro de custo certos.
 
-Esse projeto automatiza duas etapas que hoje são feitas manualmente:
+Hoje, verificar isso exige:
 
-1. **Coleta dos dados** — acessa o Handit automaticamente, exporta as visões necessárias e salva os arquivos organizados por data e hora.
+- abrir cada visão manualmente
+- exportar planilhas uma por uma
+- cruzar os dados no Excel
+- caçar linha por linha onde algo está errado
 
-2. **Validação das regras** — cruza os dados exportados e identifica onde os valores estão corretos e onde há divergências em relação ao que foi parametrizado.
-
----
-
-## Qual problema resolve
-
-Sem essa automação, um consultor ou analista precisaria:
-
-- acessar manualmente cada visão no Handit
-- exportar os arquivos um a um
-- abrir as planilhas e cruzar os dados na mão
-- identificar linhas com conta contábil ou centro de custo errado
-
-Com esse projeto, tudo isso é feito em segundos — e com um relatório pronto ao final.
+**Esse trabalho pode levar horas — e ainda está sujeito a erro humano.**
 
 ---
 
-## As visões envolvidas
+## A solução
 
-| Visão | Nome | Função |
-|---|---|---|
-| `304` | Receitas — Manutenção — Contabilização do Resultado | Define as **regras**: qual conta e centro de custo cada item do orçamento deve usar |
-| `315` | Receitas — Orçamento — Cálculo de Margem | Contém o **orçamento detalhado** mês a mês, onde as regras devem estar aplicadas |
+Este projeto faz tudo isso de forma automática:
+
+| Etapa | O que acontece |
+|---|---|
+| **1. Coleta** | Acessa o Handit, exporta as visões e salva os arquivos organizados por data e hora |
+| **2. Validação** | Cruza os dados e classifica cada linha como correta ou divergente |
+| **3. Relatório** | Gera um arquivo pronto com todos os resultados da execução |
 
 ---
 
-## Como funciona na prática
+## As visões analisadas
+
+**Visão 304 — Parametrização**
+> Define as regras: para cada combinação de cenário, mercado e item de margem, qual deve ser a conta contábil e o centro de custo.
+
+**Visão 315 — Orçamento**
+> Contém o orçamento detalhado mês a mês. É aqui que as regras devem estar aplicadas corretamente.
+
+---
+
+## Como funciona
 
 ```mermaid
 flowchart TD
@@ -57,7 +60,7 @@ flowchart TD
     E --> H["⚠️ Centro divergente\nCentro de custo diferente\ndo parametrizado"]
     E --> I["❌ Sem regra\nLinha sem parametrização\ncorrespondente na 304"]
 
-    F --> J["📁 Relatório\nsaidas-validacao/\ndata-hora/"]
+    F --> J["📁 Relatório gerado\nsaidas-validacao / data-hora"]
     G --> J
     H --> J
     I --> J
@@ -65,37 +68,16 @@ flowchart TD
 
 ---
 
-## O que é gerado ao final
+## O que vem no relatório
 
-Após cada execução, o projeto salva automaticamente uma pasta com data e hora contendo:
+Ao final de cada execução, uma pasta com data e hora é criada automaticamente com três arquivos:
 
-- **Relatório detalhado** — uma linha por registro analisado, com o status de cada um
+- **Detalhado** — cada linha do orçamento com seu status individual
 - **Resumo por regra** — agrupado por conta, centro e tipo de divergência
-- **Resumo geral** — totais de OK, divergentes e sem regra em formato estruturado
-
----
-
-## Estrutura do projeto
-
-```
-📁 docs/           → documentação do fluxo e das decisões tomadas
-📁 src/            → scripts de coleta e validação
-📁 downloads/      → arquivos exportados do Handit
-📁 saidas-validacao/ → resultados das execuções, organizados por data e hora
-```
-
----
-
-## Tecnologias utilizadas
-
-| Ferramenta | Para que serve |
-|---|---|
-| **Playwright** | Acessa o Handit e exporta as visões automaticamente |
-| **Node.js** | Executa os scripts de coleta e validação |
-| **ExcelJS** | Lê os arquivos `.xlsx` exportados |
+- **Totais gerais** — quantos registros estão OK, divergentes ou sem regra
 
 ---
 
 ## Próximos passos
 
-- [ ] Ampliar a validação para a visão `168 — Balancete — Acompanhamento — Por Conta`, verificando se os valores orçados chegam corretamente ao balancete contábil
+- [ ] Ampliar a validação para a visão `168 — Balancete — Acompanhamento — Por Conta`, confirmando que os valores orçados chegam corretamente ao balancete contábil
